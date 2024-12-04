@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Marella Pujitha</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  
+
+  <!-- Favicons -->
+  
+  <link href="./img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i&subset=cyrillic" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="./vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="./vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="./css/style.css" rel="stylesheet">
+  <!-- Hotjar Tracking Code for https://pujitha.co/ -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3574004,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T4C9YHZYLJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T4C9YHZYLJ');
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('.php-email-form').addEventListener('submit', function (event) {
+        event.preventDefault(); // prevent default form submission
+
+        fetch('forms/contact.php', {
+            method: 'POST',
+            body: new FormData(event.target),
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                document.querySelector('.sent-message').innerHTML = 'Your message has been sent. Thank you!';
+            } else {
+                document.querySelector('.error-message').innerHTML = 'Failed to send message. Please try again.';
+            }
+        })
+        .catch(error => {
+            console.error('Fetch error:', error);
+            document.querySelector('.error-message').innerHTML = 'An unexpected error occurred. Please try again.';
+        });
+    });
+});
+
+
+</script>
+  <style>
+  .my-button {
+    background-color: #d43076; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    text-decoration: none; 
+  }
+
+  .my-button:hover {
+    background-color: #f188b5;  /* Change the background color to red when hovering */
+  }
+</style>
+
+  <!-- =======================================================
+  * Template Name: Lonely
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-lonely/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column align-items-center justify-content-center">
+    <h1>Marella Pujitha!</h1>
+    <h2>I'm a BTech student with Honors</h2>
+    <div class="social-links">
+      <a href="mailto:me@pujitha.co" class="envelope"target="_blank"><i class="bi bi-envelope"></i></a>
+      <a href="tel:+91-6300371218" class="instagram"target="_blank"><i class="bi bi-phone"></i></a>
+      <a href="https://www.linkedin.com/in/pujitha-marella-977437272" target="_blank" class="linkedin"><i class="bi bi-linkedin bi"></i></a>
+      <a href="https://github.com/marellapujitha" target="_blank" class="facebook"><i class="bi bi-github"></i></a>
+
+    </div>
+    <a href="#about" class="btn-get-started scrollto"><i class="bi bi-chevron-double-down"></i></a>
+  </section><!-- End Hero -->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html"></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+         
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row no-gutters">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+          <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3>Learn More about Me</h3>
+              <p>
+                Career as a software developer, I have  focused on developing scalable and  well-documented code .I enjoy  working collaborately  but can also  run with projects independently and  explore skills that are needed to survive in the software field  
+              </p>
+              <div class="row">
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-emoji-smile"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Internships</strong> Website development</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-journal-richtext"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Projects</strong> </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-clock"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Hours of Support</strong> </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-award"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Certificates</strong> </p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">WEB TECHNOLOGIES <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">PYTHON <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">PROJECT MANAGEMENT <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">DATA STRUCTURES<i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Java<i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">C <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress">
+                <span class="skill">MySql<i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Marella Pujitha</h4>
+              <p><em> Career as a software developer, I have  focused on developing scalable and  well-documented code .I enjoy  working collaborately  but can also  run with projects independently and  explore skills that are needed to survive in the software field  .</em></p>
+              <p>
+              <ul>
+                <li>Bapatla Engineering College</li>
+                <li>6300371218</li>
+                <li>marellapujitha@gmail.com</li>
+              </ul>
+              </p>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4> BACHELOR OF TECHNOLOGIES</h4>
+              <h5>2020-2024</h5>
+              <p><em>Student of INFORMATION TECHNOLOGY</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>INTERMEDIATE</h4>
+              <h5>2018-2020</h5>
+              <p><em>Model College,Krosur</em></p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>UX DEVELOPER INTERN</h4>
+              <h5>2023 - Present</h5>
+              <p><em> Maltech pvt.ltd solutions,vijayawada</em></p>
+              <p>
+              <ul>
+                <li>Lead in the design, development, and implementation of the UX, layout, and production communication materials</li>
+                <li>Develop different Websites using HTML,CSS,JavaScript,PHP,Bootstrap,JSON. </li>
+                <li>Successfully develop different websites</li>
+              </ul>
+              </p>
+            </div>
+            <div class="resume-item">
+              <h4>WEB DEVELOPMENT</h4>
+              <h5>2022</h5>
+              <p><em>Internshala</em></p>
+              <p>
+              <ul>
+                <li>Develop STUDENT RESULT MANAGEMENT PROJECT using WEB TECHNOLOGIES</li>
+                <li>Recommended and consulted with clients on the most appropriate Wed developer</li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-div">
+        <a href="./img/pujithaResume.pdf" target="_blank">
+        <center><button class="my-button">DOWNLOAD RESUME</button></center>
+        </a>
+      </div>
+    
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Certifications</h2>
+          <p>Proudly holding industry-recognized certification, I demonstrate expertise and commitment. My certification validates a solid foundation, ensuring I bring specialized knowledge and skills to every project, enhancing overall proficiency and credibility.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <img src="./img/spm.jpg" height="200" width="200">
+              <p class="description">I have successfully completed the "Google Project Management Professional Certificate," a comprehensive online program covering essential project management concepts</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <a href="https://drive.google.com/file/d/1D2NoJ_OHEbeKXcSitcS0PV2uynWOVO5C/view?usp=sharing">
+              <img src="./img\WhatsApp Image 2023-11-04 at 21.37.27_3a0e9fb8.jpg" height="200" width="200">
+              <p class="description">I've successfully completed an NPTEL online certification in Python programming, data structures, and algorithms, enhancing my technical expertise.</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <a href="https://drive.google.com/file/d/1UYO0qxilylTg-fzOuZXrtJwVO15nbC7T/view?usp=sharing">
+              <img src="./img/Microsoft_page-0001 (1).jpg" height="200" width="200">
+              <p class="description">I've achieved a Microsoft Technology Associate certificate in Python programming, advancing my skills and proficiency in this essential technology.</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <a href="https://drive.google.com/file/d/1LA1g7J1oYYVnZ6X4U2lyduyGw-IChMps/view?usp=sharing">
+              <img src="./img/WhatsApp Image 2023-11-04 at 21.37.27_4da19b5d.jpg" height="200" width="200"/>
+              <p class="description">I've successfully completed an NPTEL online certification in Cloud Computing, enhancing my technical expertise.</p>
+              </a>
+            </div>
+          </div><hr>
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <a href="https://drive.google.com/file/d/1Ka6vPaFa8oo6UKFcfh3Sv71UE3vmA027/view?usp=sharing">
+              <img src="./img/Python For Data Science_page-0001.jpg" height="200" width="200"/>
+              <p class="description">I've recently obtained my Python For Data Science certification, signifying my proficiency in Data Science..</p>
+              </a>
+            </div>
+          </div>
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+              <div class="icon-box">
+                <a href="https://drive.google.com/file/d/1iJM71AzkrZCeSkYklaPH8fnH-uOaBnlI/view?usp=sharing">
+                <img src="./img/sql.jpg" height="200" width="200"/>
+                <p class="description">I has successfully cleared the assessment for the skill SQL(Basics)</p>
+                </a>
+              </div>
+            </div>
+              
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                  <div class="icon-box">
+                    <a href="https://drive.google.com/file/d/1r-9eWP_y1AQlDrq607W4qNMI0Hyv1E_7/view?usp=sharing">
+                    <img src="./img/java.jpg" height="200" width="200"/>
+                    <p class="description">I has successfully cleared the assessment for the skill Java(Basics)</p>
+                    </a>
+                  </div>
+          </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Projects</h2>
+          <h4>My Works</h4>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="./img/portfolio/d.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Distance Calculator Web Application(Google Maps API)</h4>
+               </div>
+              <div class="portfolio-links">
+                <a href="./img/portfolio/d.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="home.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="./img/portfolio/d2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Java Tic-Tac-Toe Game Project</h4>
+              </div>
+              <div class="portfolio-links">
+                <a href="./img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/marellapujitha/LGMVIP-Java-Task-1" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="./img/portfolio/d3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Java Text Editor Project</h4>
+              </div>
+              <div class="portfolio-links">
+                <a href="./img/portfolio/d3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/marellapujitha/LGMVIP-Java-Task-2" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Internships Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Internships</h2>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="./img/portfolio/d4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+               </div>
+              <div class="portfolio-links">
+                <a href="./img/portfolio/d4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="https://drive.google.com/file/d/1-P6jezKlpZ8ru0ncuiO-y4kxhFN4d3EI/view?usp=sharing" title=" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+              <h4>Web Development</h4>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="./img/portfolio/d4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+          
+               </div>
+              <div class="portfolio-links">
+                <a href="./img/portfolio/d4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="https://drive.google.com/file/d/1-P6jezKlpZ8ru0ncuiO-y4kxhFN4d3EI/view?usp=sharing" title=" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+              <h4>PHP Developer</h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+    
+        </div>
+
+        <div class="row">
+          
+        <div class="col-lg-4 col-md-4">
+            <div class="contact-about">
+              <h3>CONTACT ME</h3>
+              <div class="social-links">
+                <a href="https://www.twitter.com/MarellaPuj52642?t=6Y4VOiBlWkZdxrQmViIE1g&s=08" class="twitter"><i class="bi bi-twitter"target="_blank"></i></a>
+                <a href="https://www.facebook.com/marella.pujitha.3?mibextid=ZbWKwL" class="facebook"target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/pujitha.marella9603?igshid=ZDc4ODBmNjlmNQ==" class="instagram"target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/pujitha-marella" class="linkedin"target="_blank"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="info">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-geo-alt"></i>
+                <p>VCQR+QV5 Bapatla, Andhra Pradesh<br>522101</p>
+              </div>
+
+              <div class="d-flex align-items-center mt-4">
+                <i class="bi bi-envelope"></i>
+                <p>marellapujitha@gmail.com</p>
+              </div>
+
+              <div class="d-flex align-items-center mt-4">
+                <i class="bi bi-phone"></i>
+                <p>6300371218</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-8">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group mt-3">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-lonely/ -->
+        Designed by <a href="https://bootstrapmade.com/">@PujithaMarella,Y20AIT467,Department of Information Technology,Bapatla Engineering college,Bapatla</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="./vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="./vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="./vendor/swiper/swiper-bundle.min.js"></script>
+  <script src=".//vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="./vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>
